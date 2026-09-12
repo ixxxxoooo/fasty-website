@@ -105,20 +105,6 @@ title: API 参考
 | `fasty.browser.setSize(id, width, height)` | `id`, `width`, `height` | — |
 | `fasty.browser.show(id)` | `id` | — |
 
-## 内置浏览器（兼容别名）
-
-| 方法 | 参数 | 权限 |
-| --- | --- | --- |
-| `fasty.ubrowser.close(id)` | `id` | — |
-| `fasty.ubrowser.eval(id, script)` | `id`, `script` | — |
-| `fasty.ubrowser.hide(id)` | `id` | — |
-| `fasty.ubrowser.list()` | — | — |
-| `fasty.ubrowser.navigate(id, url)` | `id`, `url` | — |
-| `fasty.ubrowser.open(url, options)` | `url`, `options` | — |
-| `fasty.ubrowser.setAlwaysOnTop(id, flag)` | `id`, `flag` | — |
-| `fasty.ubrowser.setSize(id, width, height)` | `id`, `width`, `height` | — |
-| `fasty.ubrowser.show(id)` | `id` | — |
-
 ## WebSocket
 
 | 方法 | 参数 | 权限 |

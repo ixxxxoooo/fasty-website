@@ -37,14 +37,13 @@ const NAMESPACE_LABELS = {
   download: '下载',
   speedTest: '网速测试',
   browser: '内置浏览器',
-  ubrowser: '内置浏览器（兼容别名）',
   ai: 'AI',
   general: '系统 / 窗口 / 输入 / 其他',
 };
 
 const NAMESPACE_ORDER = [
   'db', 'clipboard', 'fs', 'network', 'tools', 'tts', 'ocr',
-  'image', 'browser', 'ubrowser', 'ws', 'sse', 'download', 'speedTest',
+  'image', 'browser', 'ws', 'sse', 'download', 'speedTest',
   'ai', 'general',
 ];
 

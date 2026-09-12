@@ -450,64 +450,6 @@
       ]
     },
     {
-      "method": "ubrowser.open",
-      "params": [
-        "url",
-        "options"
-      ]
-    },
-    {
-      "method": "ubrowser.navigate",
-      "params": [
-        "id",
-        "url"
-      ]
-    },
-    {
-      "method": "ubrowser.close",
-      "params": [
-        "id"
-      ]
-    },
-    {
-      "method": "ubrowser.setSize",
-      "params": [
-        "id",
-        "width",
-        "height"
-      ]
-    },
-    {
-      "method": "ubrowser.eval",
-      "params": [
-        "id",
-        "script"
-      ]
-    },
-    {
-      "method": "ubrowser.show",
-      "params": [
-        "id"
-      ]
-    },
-    {
-      "method": "ubrowser.hide",
-      "params": [
-        "id"
-      ]
-    },
-    {
-      "method": "ubrowser.list",
-      "params": []
-    },
-    {
-      "method": "ubrowser.setAlwaysOnTop",
-      "params": [
-        "id",
-        "flag"
-      ]
-    },
-    {
       "method": "ai.chat",
       "params": [
         "options"
