@@ -1,10 +1,40 @@
 import { defineConfig } from 'vitepress'
+import plugins from '../data/plugins.json'
 
 // Served from a GitHub Pages project site: https://<user>.github.io/<repo>/
 // Override with VITEPRESS_BASE=/ for a custom domain or a user/organization page.
 const base = process.env.VITEPRESS_BASE || '/fasty-website/'
 
 const APP_REPO = 'https://github.com/ixxxxoooo/Fasty'
+
+interface CatalogPlugin {
+  id: string
+  name: string
+  category: string
+}
+
+const CATEGORY_ORDER = ['utility', 'development', 'network', 'system', 'media', 'ai']
+const CATEGORY_LABELS: Record<string, string> = {
+  utility: '实用工具',
+  development: '开发工具',
+  network: '网络',
+  system: '系统',
+  media: '媒体',
+  ai: 'AI 与智能',
+}
+
+const catalog = plugins as CatalogPlugin[]
+
+const pluginSidebar = [
+  { text: '插件总览', link: '/plugins/' },
+  ...CATEGORY_ORDER.map(category => ({
+    text: CATEGORY_LABELS[category],
+    collapsed: false,
+    items: catalog
+      .filter(p => p.category === category)
+      .map(p => ({ text: p.name, link: `/plugins/${p.id}` })),
+  })).filter(group => group.items.length > 0),
+]
 
 export default defineConfig({
   base,
@@ -28,6 +58,7 @@ export default defineConfig({
     nav: [
       { text: '指南', link: '/guide/getting-started', activeMatch: '/guide/' },
       { text: '插件', link: '/plugins/', activeMatch: '/plugins/' },
+      { text: '开发', link: '/dev/', activeMatch: '/dev/' },
       { text: '更新日志', link: `${APP_REPO}/releases` },
     ],
 
@@ -49,10 +80,24 @@ export default defineConfig({
           ],
         },
       ],
-      '/plugins/': [
+      '/plugins/': pluginSidebar,
+      '/dev/': [
         {
-          text: '插件',
-          items: [{ text: '插件总览', link: '/plugins/' }],
+          text: '插件开发',
+          items: [
+            { text: '开发总览', link: '/dev/' },
+            { text: 'plugin.json 配置', link: '/dev/manifest' },
+            { text: '内置插件开发', link: '/dev/builtin' },
+            { text: '第三方插件开发', link: '/dev/external' },
+          ],
+        },
+        {
+          text: '接口与接入',
+          items: [
+            { text: 'API 参考', link: '/dev/api' },
+            { text: '权限说明', link: '/dev/permissions' },
+            { text: '打包与接入', link: '/dev/integrate' },
+          ],
         },
       ],
     },

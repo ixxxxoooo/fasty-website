@@ -11,7 +11,7 @@ trigger the app build.
 
 ```bash
 pnpm install
-pnpm gen:plugins   # optional: refresh the plugin catalog from the app repo
+pnpm gen   # optional: regenerate plugin pages and the API reference from the app repo
 pnpm dev
 ```
 
@@ -22,16 +22,21 @@ pnpm docs:build     # output: .vitepress/dist
 pnpm preview
 ```
 
-## Plugin catalog
+## Generated content
 
-`data/plugins.json` is generated from the app repository's `plugins/*/plugin.json`
-by `scripts/gen-plugin-catalog.mjs`. It reads only user-facing fields
-(`name`, `description`, feature explanations) — no internal implementation.
+`pnpm gen` runs two scripts against the app repository (default `../Fasty`):
 
-Locally it looks for the app repo at `../Fasty`; override with an absolute path:
+- `scripts/gen-plugin-catalog.mjs` → `data/plugins.json`, `plugins/index.md` and
+  one `plugins/<id>.md` detail page per plugin.
+- `scripts/gen-api-reference.mjs` → `data/api.json` and `dev/api.md`.
+
+They read only the public manifest / SDK contract (names, descriptions, feature
+explanations, API signatures, permissions) — no internal implementation.
+
+Override the app repo path with an absolute path:
 
 ```bash
-FASTY_REPO=/path/to/Fasty pnpm gen:plugins
+FASTY_REPO=/path/to/Fasty pnpm gen
 ```
 
 ## Deployment (GitHub Pages)

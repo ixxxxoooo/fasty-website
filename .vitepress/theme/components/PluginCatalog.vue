@@ -1,13 +1,21 @@
 <script setup lang="ts">
+import { withBase } from 'vitepress'
 import { computed, ref } from 'vue'
 import pluginsData from '../../../data/plugins.json'
+
+interface PluginFeature {
+  code: string
+  explain: string
+  keywords: string[]
+}
 
 interface PluginEntry {
   id: string
   name: string
   description: string
   category: string
-  features: string[]
+  permissions: string[]
+  features: PluginFeature[]
 }
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -28,7 +36,7 @@ const filtered = computed(() => {
   return all.filter(p =>
     p.name.toLowerCase().includes(q)
     || p.description.toLowerCase().includes(q)
-    || p.features.some(f => f.toLowerCase().includes(q)),
+    || p.features.some(f => f.explain.toLowerCase().includes(q)),
   )
 })
 
@@ -61,19 +69,28 @@ const grouped = computed(() => {
         <span class="plugin-group-count">{{ items.length }}</span>
       </h3>
       <div class="plugin-grid">
-        <div v-for="plugin in items" :key="plugin.id" class="plugin-card">
+        <a
+          v-for="plugin in items"
+          :key="plugin.id"
+          class="plugin-card"
+          :href="withBase(`/plugins/${plugin.id}`)"
+        >
           <div class="plugin-name">
             {{ plugin.name }}
           </div>
           <div v-if="plugin.description" class="plugin-desc">
             {{ plugin.description }}
           </div>
-          <div v-if="plugin.features.length" class="plugin-tags">
-            <span v-for="feature in plugin.features" :key="feature" class="plugin-tag">
-              {{ feature }}
+          <div v-if="plugin.features.some(f => f.explain)" class="plugin-tags">
+            <span
+              v-for="feature in plugin.features.filter(f => f.explain)"
+              :key="feature.code"
+              class="plugin-tag"
+            >
+              {{ feature.explain }}
             </span>
           </div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -135,7 +152,10 @@ const grouped = computed(() => {
 }
 
 .plugin-card {
+  display: block;
   padding: 14px 16px;
+  color: inherit;
+  text-decoration: none;
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-divider);
   border-radius: 12px;

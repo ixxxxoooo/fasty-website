@@ -4,8 +4,19 @@
     "name": "备忘录",
     "description": "轻量备忘录，支持置顶、搜索和快速编辑",
     "category": "utility",
+    "permissions": [],
     "features": [
-      "记录和管理便签笔记"
+      {
+        "code": "open",
+        "explain": "记录和管理便签笔记",
+        "keywords": [
+          "备忘录",
+          "memo",
+          "note",
+          "笔记",
+          "便签"
+        ]
+      }
     ]
   },
   {
@@ -13,8 +24,24 @@
     "name": "便签",
     "description": "桌面便签便利贴，默认独立置顶，Mini标签栏，支持 Markdown 即时预览与多色轮换",
     "category": "utility",
+    "permissions": [
+      "clipboard.read",
+      "clipboard.write"
+    ],
     "features": [
-      "桌面便签便利贴，默认独立悬浮置顶"
+      {
+        "code": "open",
+        "explain": "桌面便签便利贴，默认独立悬浮置顶",
+        "keywords": [
+          "便签",
+          "便利贴",
+          "sticky",
+          "sticky-notes",
+          "stickynote",
+          "quick-note",
+          "桌面便签"
+        ]
+      }
     ]
   },
   {
@@ -22,8 +49,21 @@
     "name": "翻页时钟",
     "description": "复古机械翻页时钟与日期，极简悬浮与自适应翻折",
     "category": "utility",
+    "permissions": [],
     "features": [
-      "复古机械翻页时钟"
+      {
+        "code": "clock",
+        "explain": "复古机械翻页时钟",
+        "keywords": [
+          "翻页时钟",
+          "时钟",
+          "时间",
+          "clock",
+          "flip clock",
+          "翻页钟",
+          "桌面时钟"
+        ]
+      }
     ]
   },
   {
@@ -31,8 +71,24 @@
     "name": "翻译助手",
     "description": "多语言翻译，支持中英日韩法德西俄",
     "category": "utility",
+    "permissions": [
+      "network",
+      "clipboard.read",
+      "clipboard.write",
+      "media.tts",
+      "ai"
+    ],
     "features": [
-      "翻译文本到目标语言"
+      {
+        "code": "translate",
+        "explain": "翻译文本到目标语言",
+        "keywords": [
+          "翻译助手",
+          "翻译",
+          "translate",
+          "translation"
+        ]
+      }
     ]
   },
   {
@@ -40,8 +96,23 @@
     "name": "股票盯盘",
     "description": "迷你股票悬浮小窗，实时查看自选股涨跌幅，支持拖拽调整尺寸",
     "category": "utility",
+    "permissions": [
+      "network"
+    ],
     "features": [
-      "迷你悬浮窗查看自选股涨跌"
+      {
+        "code": "main",
+        "explain": "迷你悬浮窗查看自选股涨跌",
+        "keywords": [
+          "股票盯盘",
+          "股票",
+          "stock",
+          "盯盘",
+          "行情",
+          "ticker",
+          "涨跌"
+        ]
+      }
     ]
   },
   {
@@ -49,8 +120,18 @@
     "name": "计算稿纸",
     "description": "多行计算器，支持变量赋值和实时结果预览",
     "category": "utility",
+    "permissions": [],
     "features": [
-      "多行计算器"
+      {
+        "code": "calc",
+        "explain": "多行计算器",
+        "keywords": [
+          "计算稿纸",
+          "计算",
+          "calculator",
+          "calc"
+        ]
+      }
     ]
   },
   {
@@ -58,9 +139,35 @@
     "name": "剪贴板历史",
     "description": "自动记录剪贴板历史，支持搜索、收藏、分类查看",
     "category": "utility",
+    "permissions": [
+      "clipboard.read",
+      "fs.read",
+      "clipboard.write",
+      "input.simulate"
+    ],
     "features": [
-      "查看和搜索剪贴板记录",
-      "查看收藏的剪贴板内容"
+      {
+        "code": "history",
+        "explain": "查看和搜索剪贴板记录",
+        "keywords": [
+          "剪贴板历史",
+          "剪贴板",
+          "剪切板",
+          "剪切",
+          "clipboard",
+          "粘贴板",
+          "历史"
+        ]
+      },
+      {
+        "code": "favorites",
+        "explain": "查看收藏的剪贴板内容",
+        "keywords": [
+          "剪贴板收藏",
+          "收藏",
+          "favorites"
+        ]
+      }
     ]
   },
   {
@@ -68,8 +175,24 @@
     "name": "简明词典",
     "description": "离线英文简明词典，支持秒级极速查词、模糊匹配与中文反查",
     "category": "utility",
+    "permissions": [
+      "clipboard.write",
+      "media.tts"
+    ],
     "features": [
-      "极速查询英文单词及发音"
+      {
+        "code": "lookup",
+        "explain": "极速查询英文单词及发音",
+        "keywords": [
+          "词典",
+          "查词",
+          "单词",
+          "英汉词典",
+          "dict",
+          "dictionary",
+          "word"
+        ]
+      }
     ]
   },
   {
@@ -77,12 +200,54 @@
     "name": "截图工具",
     "description": "屏幕截图工具，支持区域/窗口/全屏截图，内置编辑器",
     "category": "utility",
+    "permissions": [
+      "clipboard.write",
+      "screen",
+      "filesystem",
+      "media.ocr"
+    ],
     "features": [
-      "区域截图 / 窗口截图 / 全屏截图",
-      "框选屏幕区域截图",
-      "截取整个屏幕",
-      "点击选择窗口截图",
-      "钉在桌面（贴图）"
+      {
+        "code": "capture",
+        "explain": "区域截图 / 窗口截图 / 全屏截图",
+        "keywords": [
+          "截图工具",
+          "截图",
+          "截屏",
+          "screenshot"
+        ]
+      },
+      {
+        "code": "area",
+        "explain": "框选屏幕区域截图",
+        "keywords": [
+          "区域截图",
+          "框选"
+        ]
+      },
+      {
+        "code": "fullscreen",
+        "explain": "截取整个屏幕",
+        "keywords": [
+          "全屏截图"
+        ]
+      },
+      {
+        "code": "window",
+        "explain": "点击选择窗口截图",
+        "keywords": [
+          "窗口截图"
+        ]
+      },
+      {
+        "code": "pin",
+        "explain": "钉在桌面（贴图）",
+        "keywords": [
+          "贴图",
+          "钉在桌面",
+          "pin"
+        ]
+      }
     ]
   },
   {
@@ -90,8 +255,20 @@
     "name": "批量重命名",
     "description": "批量重命名文件，支持查找替换、前后缀、序号等模式",
     "category": "utility",
+    "permissions": [
+      "filesystem"
+    ],
     "features": [
-      "批量修改文件名"
+      {
+        "code": "rename",
+        "explain": "批量修改文件名",
+        "keywords": [
+          "批量重命名",
+          "重命名",
+          "rename",
+          "批量"
+        ]
+      }
     ]
   },
   {
@@ -99,8 +276,24 @@
     "name": "日历",
     "description": "公历与农历日历，支持节气、法定节假日与调休、宜忌详情与假期提醒，可自定义周起始与显示项",
     "category": "utility",
+    "permissions": [
+      "network"
+    ],
     "features": [
-      "查看公历/农历、节气与节假日，支持假期提醒"
+      {
+        "code": "calendar",
+        "explain": "查看公历/农历、节气与节假日，支持假期提醒",
+        "keywords": [
+          "日历",
+          "农历",
+          "节气",
+          "节假日",
+          "假期",
+          "calendar",
+          "lunar",
+          "holiday"
+        ]
+      }
     ]
   },
   {
@@ -108,8 +301,26 @@
     "name": "深色与浅色模式切换",
     "description": "一键在系统深色/浅色之间切换",
     "category": "utility",
+    "permissions": [
+      "shell.execute"
+    ],
     "features": [
-      "当前深色则切浅色，当前浅色则切深色"
+      {
+        "code": "toggle",
+        "explain": "当前深色则切浅色，当前浅色则切深色",
+        "keywords": [
+          "切换深色 / 浅色",
+          "主题",
+          "深色",
+          "浅色",
+          "暗黑",
+          "dark",
+          "light",
+          "theme",
+          "模式",
+          "切换"
+        ]
+      }
     ]
   },
   {
@@ -117,8 +328,24 @@
     "name": "天气预报",
     "description": "精美天气预报，支持实时天气、24小时逐小时预报、7天天气趋势、空气质量与生活气象指数",
     "category": "utility",
+    "permissions": [
+      "network"
+    ],
     "features": [
-      "查看实时天气、24小时预报与7天气象趋势"
+      {
+        "code": "weather",
+        "explain": "查看实时天气、24小时预报与7天气象趋势",
+        "keywords": [
+          "天气",
+          "weather",
+          "气温",
+          "温度",
+          "天气预报",
+          "下雨",
+          "预报",
+          "空气质量"
+        ]
+      }
     ]
   },
   {
@@ -126,8 +353,25 @@
     "name": "网页快开",
     "description": "配置搜索引擎与直达链接；选中文字 + 快捷键即可搜索",
     "category": "utility",
+    "permissions": [
+      "shell.execute"
+    ],
     "features": [
-      "管理搜索引擎与快捷链接"
+      {
+        "code": "open",
+        "explain": "管理搜索引擎与快捷链接",
+        "keywords": [
+          "网页快开",
+          "网页",
+          "网站",
+          "快开",
+          "搜索",
+          "web",
+          "url",
+          "google",
+          "百度"
+        ]
+      }
     ]
   },
   {
@@ -135,8 +379,24 @@
     "name": "桌面宠物",
     "description": "瓦力风格小机器人，透明异形桌面挂件",
     "category": "utility",
+    "permissions": [],
     "features": [
-      "召唤瓦力风格小机器人"
+      {
+        "code": "open",
+        "explain": "召唤瓦力风格小机器人",
+        "keywords": [
+          "桌面宠物",
+          "宠物",
+          "桌宠",
+          "pet",
+          "挂件",
+          "桌面",
+          "萌宠",
+          "机器人",
+          "瓦力",
+          "小瓦"
+        ]
+      }
     ]
   },
   {
@@ -144,8 +404,24 @@
     "name": "字数统计",
     "description": "专业文本字数与语言特征分析，支持阅读时长预估与剪贴板极速读取",
     "category": "utility",
+    "permissions": [
+      "clipboard.read",
+      "clipboard.write"
+    ],
     "features": [
-      "统计字符数、单词数、行数"
+      {
+        "code": "count",
+        "explain": "统计字符数、单词数、行数",
+        "keywords": [
+          "字数统计",
+          "word",
+          "count",
+          "字数",
+          "统计",
+          "字符",
+          "wc"
+        ]
+      }
     ]
   },
   {
@@ -153,8 +429,24 @@
     "name": "AI 助手",
     "description": "AI 对话助手，支持流式输出、多模型切换、对话历史、AI 绘画",
     "category": "utility",
+    "permissions": [
+      "ai",
+      "fs.write",
+      "shell.execute"
+    ],
     "features": [
-      "与 AI 进行对话"
+      {
+        "code": "ai-chat",
+        "explain": "与 AI 进行对话",
+        "keywords": [
+          "AI 助手",
+          "AI 对话",
+          "AI Chat",
+          "chat",
+          "ask",
+          "问一下"
+        ]
+      }
     ]
   },
   {
@@ -162,10 +454,44 @@
     "name": "OCR 文字识别",
     "description": "极便捷的 OCR 文字识别工具，截图/粘贴/选图一键提取文字",
     "category": "utility",
+    "permissions": [
+      "media.ocr",
+      "clipboard.read",
+      "clipboard.write",
+      "input.simulate"
+    ],
     "features": [
-      "OCR 文字识别工具",
-      "截图识别文字",
-      "截图识别文字并复制"
+      {
+        "code": "recognize",
+        "explain": "OCR 文字识别工具",
+        "keywords": [
+          "OCR",
+          "文字识别",
+          "ocr",
+          "识别文字",
+          "图片识别",
+          "提取文字",
+          "text recognition"
+        ]
+      },
+      {
+        "code": "screenshot-ocr",
+        "explain": "截图识别文字",
+        "keywords": [
+          "截图识别",
+          "截图OCR",
+          "screenshot ocr"
+        ]
+      },
+      {
+        "code": "screenshot-ocr-copy",
+        "explain": "截图识别文字并复制",
+        "keywords": [
+          "截图识别并复制",
+          "截图OCR复制",
+          "screenshot ocr copy"
+        ]
+      }
     ]
   },
   {
@@ -173,8 +499,20 @@
     "name": "ToDo 待办",
     "description": "轻量待办清单，支持分组、优先级和快速添加",
     "category": "utility",
+    "permissions": [],
     "features": [
-      "管理待办事项"
+      {
+        "code": "list",
+        "explain": "管理待办事项",
+        "keywords": [
+          "ToDo 待办",
+          "待办",
+          "todo",
+          "任务",
+          "清单",
+          "task"
+        ]
+      }
     ]
   },
   {
@@ -182,9 +520,28 @@
     "name": "时间戳转换",
     "description": "时间戳与日期格式互转，支持多种常见格式",
     "category": "development",
+    "permissions": [],
     "features": [
-      "Unix 时间戳 ↔ 日期格式互转",
-      "复制当前 Unix 时间戳"
+      {
+        "code": "convert",
+        "explain": "Unix 时间戳 ↔ 日期格式互转",
+        "keywords": [
+          "时间戳转换",
+          "时间戳",
+          "timestamp",
+          "日期",
+          "time"
+        ]
+      },
+      {
+        "code": "now",
+        "explain": "复制当前 Unix 时间戳",
+        "keywords": [
+          "获取当前时间戳",
+          "当前时间",
+          "now"
+        ]
+      }
     ]
   },
   {
@@ -192,8 +549,22 @@
     "name": "文本对比",
     "description": "左右双栏对比文本差异，支持语法高亮",
     "category": "development",
+    "permissions": [
+      "clipboard.read",
+      "clipboard.write"
+    ],
     "features": [
-      "对比两段文本的差异"
+      {
+        "code": "diff",
+        "explain": "对比两段文本的差异",
+        "keywords": [
+          "文本对比",
+          "diff",
+          "对比",
+          "比较",
+          "差异"
+        ]
+      }
     ]
   },
   {
@@ -201,8 +572,22 @@
     "name": "颜色对比",
     "description": "识别颜色代码，支持多个颜色的亮度排序与对比度对比",
     "category": "development",
+    "permissions": [
+      "clipboard.write"
+    ],
     "features": [
-      "识别颜色并对比多个颜色"
+      {
+        "code": "compare",
+        "explain": "识别颜色并对比多个颜色",
+        "keywords": [
+          "颜色对比",
+          "颜色识别",
+          "颜色",
+          "色值",
+          "对比度",
+          "color"
+        ]
+      }
     ]
   },
   {
@@ -210,8 +595,18 @@
     "name": "Base64 编解码",
     "description": "Base64 编码与解码工具，支持文本与 Base64 互转",
     "category": "development",
+    "permissions": [],
     "features": [
-      "编码 / 解码 Base64 文本"
+      {
+        "code": "codec",
+        "explain": "编码 / 解码 Base64 文本",
+        "keywords": [
+          "Base64 编解码",
+          "base64",
+          "编码",
+          "解码"
+        ]
+      }
     ]
   },
   {
@@ -219,8 +614,19 @@
     "name": "Hash 计算器",
     "description": "计算文本的 MD5、SHA-1、SHA-256、SHA-512 哈希值",
     "category": "development",
+    "permissions": [],
     "features": [
-      "MD5 / SHA-1 / SHA-256 / SHA-512"
+      {
+        "code": "hash",
+        "explain": "MD5 / SHA-1 / SHA-256 / SHA-512",
+        "keywords": [
+          "Hash 计算器",
+          "hash",
+          "哈希",
+          "md5",
+          "sha"
+        ]
+      }
     ]
   },
   {
@@ -228,8 +634,24 @@
     "name": "Hosts 切换",
     "description": "管理和快速切换 /etc/hosts 方案",
     "category": "development",
+    "permissions": [
+      "shell.execute",
+      "fs.read",
+      "fs.write"
+    ],
     "features": [
-      "管理和切换 hosts 方案"
+      {
+        "code": "manage",
+        "explain": "管理和切换 hosts 方案",
+        "keywords": [
+          "Hosts 切换",
+          "hosts",
+          "域名",
+          "dns",
+          "切换",
+          "开发"
+        ]
+      }
     ]
   },
   {
@@ -237,8 +659,18 @@
     "name": "JSON 格式化",
     "description": "JSON 格式化与压缩，支持语法高亮",
     "category": "development",
+    "permissions": [],
     "features": [
-      "格式化 / 压缩 / 校验 JSON"
+      {
+        "code": "format",
+        "explain": "格式化 / 压缩 / 校验 JSON",
+        "keywords": [
+          "JSON 格式化",
+          "json",
+          "格式化",
+          "format"
+        ]
+      }
     ]
   },
   {
@@ -246,8 +678,21 @@
     "name": "Markdown 预览",
     "description": "实时 Markdown 编辑与预览，支持 GFM 语法",
     "category": "development",
+    "permissions": [
+      "clipboard.read",
+      "clipboard.write"
+    ],
     "features": [
-      "编辑并实时预览 Markdown"
+      {
+        "code": "preview",
+        "explain": "编辑并实时预览 Markdown",
+        "keywords": [
+          "Markdown 预览",
+          "markdown",
+          "md",
+          "预览"
+        ]
+      }
     ]
   },
   {
@@ -255,8 +700,28 @@
     "name": "Mermaid 编辑器",
     "description": "Mermaid 图表实时编辑与预览，支持 AI 生成/纠错、多模板、导出 PNG/SVG",
     "category": "development",
+    "permissions": [
+      "clipboard.read",
+      "clipboard.write",
+      "ai",
+      "fs.write"
+    ],
     "features": [
-      "编辑并实时预览 Mermaid 图表"
+      {
+        "code": "edit",
+        "explain": "编辑并实时预览 Mermaid 图表",
+        "keywords": [
+          "Mermaid",
+          "mermaid",
+          "流程图",
+          "时序图",
+          "序列图",
+          "思维导图",
+          "甘特图",
+          "类图",
+          "ER图"
+        ]
+      }
     ]
   },
   {
@@ -264,8 +729,23 @@
     "name": "SQL 格式化",
     "description": "SQL 格式化与压缩，支持 MySQL / TiDB / StarRocks / Spark / Presto 等方言语法高亮",
     "category": "development",
+    "permissions": [],
     "features": [
-      "格式化 / 压缩 SQL，多方言语法高亮"
+      {
+        "code": "format",
+        "explain": "格式化 / 压缩 SQL，多方言语法高亮",
+        "keywords": [
+          "SQL 格式化",
+          "sql",
+          "SQL格式化",
+          "format sql",
+          "mysql",
+          "tidb",
+          "starrocks",
+          "spark sql",
+          "presto"
+        ]
+      }
     ]
   },
   {
@@ -273,8 +753,20 @@
     "name": "URL 编解码",
     "description": "URL 编码与解码，支持 encodeURIComponent 和 encodeURI",
     "category": "development",
+    "permissions": [],
     "features": [
-      "编码 / 解码 URL"
+      {
+        "code": "codec",
+        "explain": "编码 / 解码 URL",
+        "keywords": [
+          "URL 编解码",
+          "url",
+          "编码",
+          "解码",
+          "encode",
+          "decode"
+        ]
+      }
     ]
   },
   {
@@ -282,8 +774,20 @@
     "name": "UUID 生成器",
     "description": "批量生成 UUID，支持大写和去连字符",
     "category": "development",
+    "permissions": [
+      "clipboard.write"
+    ],
     "features": [
-      "生成随机 UUID"
+      {
+        "code": "generate",
+        "explain": "生成随机 UUID",
+        "keywords": [
+          "UUID 生成器",
+          "uuid",
+          "guid",
+          "生成"
+        ]
+      }
     ]
   },
   {
@@ -291,8 +795,25 @@
     "name": "测网速",
     "description": "同时测试国内与国外延迟、下载、上传",
     "category": "network",
+    "permissions": [
+      "network"
+    ],
     "features": [
-      "国内 + 国外一起测"
+      {
+        "code": "open",
+        "explain": "国内 + 国外一起测",
+        "keywords": [
+          "测网速",
+          "网速",
+          "测速",
+          "speed",
+          "带宽",
+          "ping",
+          "网络",
+          "国内",
+          "国外"
+        ]
+      }
     ]
   },
   {
@@ -300,8 +821,22 @@
     "name": "DNS 切换",
     "description": "快速切换 macOS 网络 DNS 服务器",
     "category": "network",
+    "permissions": [
+      "shell.execute"
+    ],
     "features": [
-      "一键切换 DNS 服务器"
+      {
+        "code": "switch",
+        "explain": "一键切换 DNS 服务器",
+        "keywords": [
+          "DNS 切换",
+          "dns",
+          "域名",
+          "网络",
+          "8.8.8.8",
+          "cloudflare"
+        ]
+      }
     ]
   },
   {
@@ -309,8 +844,21 @@
     "name": "IP 查询助手",
     "description": "查询本机IP、公网IP、IP地理位置信息",
     "category": "network",
+    "permissions": [
+      "network"
+    ],
     "features": [
-      "查询 IP 地址信息"
+      {
+        "code": "query",
+        "explain": "查询 IP 地址信息",
+        "keywords": [
+          "IP 查询",
+          "ip",
+          "查询",
+          "地址",
+          "网络"
+        ]
+      }
     ]
   },
   {
@@ -318,9 +866,29 @@
     "name": "端口查询器",
     "description": "查询端口占用、扫描端口范围、查看监听端口",
     "category": "system",
+    "permissions": [
+      "shell"
+    ],
     "features": [
-      "查询端口占用和扫描",
-      "查看所有监听中的端口"
+      {
+        "code": "scan",
+        "explain": "查询端口占用和扫描",
+        "keywords": [
+          "端口查询",
+          "端口",
+          "port",
+          "扫描"
+        ]
+      },
+      {
+        "code": "listening",
+        "explain": "查看所有监听中的端口",
+        "keywords": [
+          "监听端口",
+          "监听",
+          "listening"
+        ]
+      }
     ]
   },
   {
@@ -328,8 +896,20 @@
     "name": "进程管理",
     "description": "查看系统进程、CPU/内存占用，支持搜索和终止进程",
     "category": "system",
+    "permissions": [
+      "shell"
+    ],
     "features": [
-      "查看和管理系统进程"
+      {
+        "code": "list",
+        "explain": "查看和管理系统进程",
+        "keywords": [
+          "进程管理",
+          "进程",
+          "process",
+          "任务管理"
+        ]
+      }
     ]
   },
   {
@@ -337,18 +917,114 @@
     "name": "系统控制",
     "description": "通过关键词控制 macOS：屏保、废纸篓、锁屏、睡眠、重启、关机、全部弹出；可开关命令并引导自动化权限",
     "category": "system",
+    "permissions": [],
     "features": [
-      "管理系统命令开关与自动化权限",
-      "启动屏幕保护程序",
-      "在 Finder 中打开废纸篓",
-      "清空废纸篓（需确认）",
-      "注销当前用户（需确认）",
-      "让 Mac 进入睡眠",
-      "关闭显示器",
-      "锁定屏幕",
-      "重启 Mac（需确认）",
-      "关闭 Mac（需确认）",
-      "弹出全部可移除磁盘（排除系统盘与 Time Machine）"
+      {
+        "code": "open",
+        "explain": "管理系统命令开关与自动化权限",
+        "keywords": [
+          "系统控制",
+          "system control",
+          "系统命令",
+          "macos 系统"
+        ]
+      },
+      {
+        "code": "screensaver",
+        "explain": "启动屏幕保护程序",
+        "keywords": [
+          "screensaver",
+          "屏保",
+          "屏幕保护",
+          "screen saver"
+        ]
+      },
+      {
+        "code": "trash",
+        "explain": "在 Finder 中打开废纸篓",
+        "keywords": [
+          "trash",
+          "废纸篓",
+          "打开废纸篓",
+          "show trash"
+        ]
+      },
+      {
+        "code": "emptytrash",
+        "explain": "清空废纸篓（需确认）",
+        "keywords": [
+          "emptytrash",
+          "清空废纸篓",
+          "empty trash"
+        ]
+      },
+      {
+        "code": "logout",
+        "explain": "注销当前用户（需确认）",
+        "keywords": [
+          "logout",
+          "注销",
+          "登出",
+          "log out"
+        ]
+      },
+      {
+        "code": "sleep",
+        "explain": "让 Mac 进入睡眠",
+        "keywords": [
+          "sleep",
+          "睡眠",
+          "休眠"
+        ]
+      },
+      {
+        "code": "sleepdisplays",
+        "explain": "关闭显示器",
+        "keywords": [
+          "sleepdisplays",
+          "关闭显示器",
+          "显示器睡眠",
+          "sleep displays"
+        ]
+      },
+      {
+        "code": "lock",
+        "explain": "锁定屏幕",
+        "keywords": [
+          "lock",
+          "锁屏",
+          "锁定",
+          "lock screen"
+        ]
+      },
+      {
+        "code": "restart",
+        "explain": "重启 Mac（需确认）",
+        "keywords": [
+          "restart",
+          "重启",
+          "reboot"
+        ]
+      },
+      {
+        "code": "shutdown",
+        "explain": "关闭 Mac（需确认）",
+        "keywords": [
+          "shutdown",
+          "关机",
+          "shut down"
+        ]
+      },
+      {
+        "code": "ejectall",
+        "explain": "弹出全部可移除磁盘（排除系统盘与 Time Machine）",
+        "keywords": [
+          "ejectall",
+          "全部弹出",
+          "弹出全部",
+          "eject all"
+        ]
+      }
     ]
   },
   {
@@ -356,8 +1032,19 @@
     "name": "系统信息",
     "description": "查看 CPU、内存、磁盘、网络等系统信息",
     "category": "system",
+    "permissions": [],
     "features": [
-      "CPU / 内存 / 磁盘 / 网络概览"
+      {
+        "code": "info",
+        "explain": "CPU / 内存 / 磁盘 / 网络概览",
+        "keywords": [
+          "系统信息",
+          "系统",
+          "system",
+          "信息",
+          "硬件"
+        ]
+      }
     ]
   },
   {
@@ -365,8 +1052,24 @@
     "name": "小说阅读",
     "description": "微信读书风格优雅小说阅读器，支持本地 TXT 智能分章导入与在线全本高速搜索离线",
     "category": "media",
+    "permissions": [
+      "network",
+      "file.read"
+    ],
     "features": [
-      "阅读小说、本地导入与在线找书"
+      {
+        "code": "reader",
+        "explain": "阅读小说、本地导入与在线找书",
+        "keywords": [
+          "小说阅读",
+          "小说",
+          "阅读",
+          "看书",
+          "novel",
+          "reader",
+          "txt"
+        ]
+      }
     ]
   },
   {
@@ -374,14 +1077,95 @@
     "name": "AI 聚合中文",
     "description": "AI 聚合中文 / AI Portal — DeepSeek, ChatGPT, Gemini, Doubao, Kimi, GLM official web hubs with independent windows and persistent login",
     "category": "ai",
+    "permissions": [
+      "browser.execute",
+      "browser.open",
+      "browser.navigate",
+      "browser.close",
+      "browser.setSize",
+      "browser.eval",
+      "browser.show",
+      "browser.hide",
+      "browser.list",
+      "browser.setAlwaysOnTop",
+      "shell.execute",
+      "shell.openUrl"
+    ],
     "features": [
-      "AI 聚合中文设置：管理各官网独立会话窗口",
-      "打开 DeepSeek 官方会话窗口",
-      "打开 ChatGPT 官方会话窗口",
-      "打开 Google Gemini 官方会话窗口",
-      "打开豆包官方会话窗口",
-      "打开 Kimi 官方会话窗口",
-      "打开 GLM / 智谱官方会话窗口"
+      {
+        "code": "settings",
+        "explain": "AI 聚合中文设置：管理各官网独立会话窗口",
+        "keywords": [
+          "AI 聚合中文",
+          "AI Portal",
+          "AI Aggregation",
+          "AI Hub",
+          "ai portal",
+          "ai-portal",
+          "AI 官网",
+          "AI 设置"
+        ]
+      },
+      {
+        "code": "deepseek",
+        "explain": "打开 DeepSeek 官方会话窗口",
+        "keywords": [
+          "DeepSeek",
+          "deepseek",
+          "ds",
+          "深度求索"
+        ]
+      },
+      {
+        "code": "chatgpt",
+        "explain": "打开 ChatGPT 官方会话窗口",
+        "keywords": [
+          "ChatGPT",
+          "chatgpt",
+          "gpt",
+          "openai"
+        ]
+      },
+      {
+        "code": "gemini",
+        "explain": "打开 Google Gemini 官方会话窗口",
+        "keywords": [
+          "Gemini",
+          "gemini",
+          "谷歌 Gemini",
+          "bard"
+        ]
+      },
+      {
+        "code": "doubao",
+        "explain": "打开豆包官方会话窗口",
+        "keywords": [
+          "豆包",
+          "doubao",
+          "Doubao"
+        ]
+      },
+      {
+        "code": "kimi",
+        "explain": "打开 Kimi 官方会话窗口",
+        "keywords": [
+          "Kimi",
+          "kimi",
+          "月之暗面",
+          "moonshot"
+        ]
+      },
+      {
+        "code": "glm",
+        "explain": "打开 GLM / 智谱官方会话窗口",
+        "keywords": [
+          "GLM",
+          "glm",
+          "ChatGLM",
+          "智谱",
+          "zhipu"
+        ]
+      }
     ]
   }
 ]

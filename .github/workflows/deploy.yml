@@ -40,10 +40,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Refresh plugin catalog
-        # Falls back to the committed data/plugins.json if the app repo is unavailable.
+      - name: Regenerate plugin catalog & API reference
+        # Falls back to the committed data/ if the app repo is unavailable.
         continue-on-error: true
-        run: pnpm gen:plugins
+        run: pnpm gen
         env:
           FASTY_REPO: ${{ github.workspace }}/_fasty
 

@@ -5,7 +5,9 @@
   "type": "module",
   "description": "Official website and documentation for Fasty",
   "scripts": {
+    "gen": "pnpm gen:plugins && pnpm gen:api",
     "gen:plugins": "node scripts/gen-plugin-catalog.mjs",
+    "gen:api": "node scripts/gen-api-reference.mjs",
     "dev": "vitepress dev",
     "docs:build": "vitepress build",
     "preview": "vitepress preview"

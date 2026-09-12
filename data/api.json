@@ -1,0 +1,899 @@
+{
+  "methods": [
+    {
+      "method": "db.put",
+      "params": [
+        "key",
+        "value"
+      ]
+    },
+    {
+      "method": "db.get",
+      "params": [
+        "key"
+      ]
+    },
+    {
+      "method": "db.remove",
+      "params": [
+        "key"
+      ]
+    },
+    {
+      "method": "db.list",
+      "params": [
+        "prefix"
+      ]
+    },
+    {
+      "method": "db.clear",
+      "params": []
+    },
+    {
+      "method": "clipboard.getHistory",
+      "params": [
+        "limit",
+        "contentType"
+      ]
+    },
+    {
+      "method": "clipboard.getFavorites",
+      "params": [
+        "limit"
+      ]
+    },
+    {
+      "method": "clipboard.write",
+      "params": [
+        "content"
+      ]
+    },
+    {
+      "method": "clipboard.search",
+      "params": [
+        "query",
+        "limit"
+      ]
+    },
+    {
+      "method": "clipboard.add",
+      "params": [
+        "content",
+        "contentType"
+      ]
+    },
+    {
+      "method": "clipboard.remove",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "clipboard.clear",
+      "params": []
+    },
+    {
+      "method": "clipboard.togglePin",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "clipboard.toggleFavorite",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "clipboard.readImage",
+      "params": []
+    },
+    {
+      "method": "fs.readFile",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "fs.writeFile",
+      "params": [
+        "path",
+        "content"
+      ]
+    },
+    {
+      "method": "fs.readDir",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "fs.fileExists",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "fs.fileMetadata",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "fs.rename",
+      "params": [
+        "from",
+        "to"
+      ]
+    },
+    {
+      "method": "fs.copy",
+      "params": [
+        "from",
+        "to"
+      ]
+    },
+    {
+      "method": "fs.delete",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "fs.mkdir",
+      "params": [
+        "path",
+        "recursive"
+      ]
+    },
+    {
+      "method": "fs.writeBinary",
+      "params": [
+        "path",
+        "base64Data"
+      ]
+    },
+    {
+      "method": "tools.formatJson",
+      "params": [
+        "input",
+        "indent"
+      ]
+    },
+    {
+      "method": "tools.base64Encode",
+      "params": [
+        "input"
+      ]
+    },
+    {
+      "method": "tools.base64Decode",
+      "params": [
+        "input"
+      ]
+    },
+    {
+      "method": "tools.computeHash",
+      "params": [
+        "input",
+        "algorithm"
+      ]
+    },
+    {
+      "method": "tools.dictLookup",
+      "params": [
+        "word"
+      ]
+    },
+    {
+      "method": "tools.dictSearch",
+      "params": [
+        "query",
+        "limit"
+      ]
+    },
+    {
+      "method": "tts.speak",
+      "params": [
+        "text",
+        "rate",
+        "voice"
+      ]
+    },
+    {
+      "method": "tts.stop",
+      "params": []
+    },
+    {
+      "method": "tts.getVoices",
+      "params": []
+    },
+    {
+      "method": "ocr.recognize",
+      "params": [
+        "imagePath",
+        "languages"
+      ]
+    },
+    {
+      "method": "ws.connect",
+      "params": [
+        "url"
+      ]
+    },
+    {
+      "method": "ws.send",
+      "params": [
+        "id",
+        "message"
+      ]
+    },
+    {
+      "method": "ws.close",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "sse.connect",
+      "params": [
+        "url",
+        "headers"
+      ]
+    },
+    {
+      "method": "sse.close",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "download.file",
+      "params": [
+        "url",
+        "savePath",
+        "headers"
+      ]
+    },
+    {
+      "method": "download.pause",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "download.resume",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "download.cancel",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "speedTest.download",
+      "params": [
+        "url",
+        "durationMs"
+      ]
+    },
+    {
+      "method": "speedTest.upload",
+      "params": [
+        "url",
+        "durationMs"
+      ]
+    },
+    {
+      "method": "image.store",
+      "params": [
+        "bytes"
+      ]
+    },
+    {
+      "method": "image.copyFile",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "image.saveFile",
+      "params": [
+        "source",
+        "destination"
+      ]
+    },
+    {
+      "method": "image.getInfo",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "image.resize",
+      "params": [
+        "inputPath",
+        "outputPath",
+        "width",
+        "height",
+        "maintainAspect"
+      ]
+    },
+    {
+      "method": "image.crop",
+      "params": [
+        "inputPath",
+        "outputPath",
+        "x",
+        "y",
+        "width",
+        "height"
+      ]
+    },
+    {
+      "method": "image.rotate",
+      "params": [
+        "inputPath",
+        "outputPath",
+        "degrees"
+      ]
+    },
+    {
+      "method": "image.flip",
+      "params": [
+        "inputPath",
+        "outputPath",
+        "horizontal"
+      ]
+    },
+    {
+      "method": "image.convert",
+      "params": [
+        "inputPath",
+        "outputPath",
+        "quality"
+      ]
+    },
+    {
+      "method": "image.watermark",
+      "params": [
+        "inputPath",
+        "outputPath",
+        "text",
+        "position",
+        "opacity"
+      ]
+    },
+    {
+      "method": "image.adjust",
+      "params": [
+        "inputPath",
+        "outputPath",
+        "brightness",
+        "contrast"
+      ]
+    },
+    {
+      "method": "image.blur",
+      "params": [
+        "inputPath",
+        "outputPath",
+        "sigma"
+      ]
+    },
+    {
+      "method": "image.grayscale",
+      "params": [
+        "inputPath",
+        "outputPath"
+      ]
+    },
+    {
+      "method": "browser.open",
+      "params": [
+        "url",
+        "options"
+      ]
+    },
+    {
+      "method": "browser.navigate",
+      "params": [
+        "id",
+        "url"
+      ]
+    },
+    {
+      "method": "browser.close",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "browser.setSize",
+      "params": [
+        "id",
+        "width",
+        "height"
+      ]
+    },
+    {
+      "method": "browser.eval",
+      "params": [
+        "id",
+        "script"
+      ]
+    },
+    {
+      "method": "browser.show",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "browser.hide",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "browser.list",
+      "params": []
+    },
+    {
+      "method": "browser.setAlwaysOnTop",
+      "params": [
+        "id",
+        "flag"
+      ]
+    },
+    {
+      "method": "ubrowser.open",
+      "params": [
+        "url",
+        "options"
+      ]
+    },
+    {
+      "method": "ubrowser.navigate",
+      "params": [
+        "id",
+        "url"
+      ]
+    },
+    {
+      "method": "ubrowser.close",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "ubrowser.setSize",
+      "params": [
+        "id",
+        "width",
+        "height"
+      ]
+    },
+    {
+      "method": "ubrowser.eval",
+      "params": [
+        "id",
+        "script"
+      ]
+    },
+    {
+      "method": "ubrowser.show",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "ubrowser.hide",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "ubrowser.list",
+      "params": []
+    },
+    {
+      "method": "ubrowser.setAlwaysOnTop",
+      "params": [
+        "id",
+        "flag"
+      ]
+    },
+    {
+      "method": "ai.chat",
+      "params": [
+        "options"
+      ]
+    },
+    {
+      "method": "ai.getModels",
+      "params": []
+    },
+    {
+      "method": "ai.getConfig",
+      "params": []
+    },
+    {
+      "method": "ai.abort",
+      "params": [
+        "requestId"
+      ]
+    },
+    {
+      "method": "ai.imageGenerate",
+      "params": [
+        "prompt",
+        "size"
+      ]
+    },
+    {
+      "method": "shell.openPath",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "shell.openUrl",
+      "params": [
+        "url"
+      ]
+    },
+    {
+      "method": "shell.showInFolder",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "shell.trashItem",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "shellBeep",
+      "params": []
+    },
+    {
+      "method": "showNotification",
+      "params": [
+        "title",
+        "body"
+      ]
+    },
+    {
+      "method": "getPath",
+      "params": [
+        "name"
+      ]
+    },
+    {
+      "method": "getFileIcon",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "getPlatform",
+      "params": []
+    },
+    {
+      "method": "getAppVersion",
+      "params": []
+    },
+    {
+      "method": "readCurrentFolderPath",
+      "params": []
+    },
+    {
+      "method": "readCurrentBrowserUrl",
+      "params": []
+    },
+    {
+      "method": "pinImage",
+      "params": [
+        "options"
+      ]
+    },
+    {
+      "method": "closeImagePin",
+      "params": [
+        "id"
+      ]
+    },
+    {
+      "method": "showMainWindow",
+      "params": []
+    },
+    {
+      "method": "hideMainWindow",
+      "params": []
+    },
+    {
+      "method": "setWindowSize",
+      "params": [
+        "width",
+        "height"
+      ]
+    },
+    {
+      "method": "setWindowAlwaysOnTop",
+      "params": [
+        "flag"
+      ]
+    },
+    {
+      "method": "getWindowType",
+      "params": []
+    },
+    {
+      "method": "showOpenDialog",
+      "params": [
+        "options"
+      ]
+    },
+    {
+      "method": "showSaveDialog",
+      "params": [
+        "options"
+      ]
+    },
+    {
+      "method": "isDarkMode",
+      "params": []
+    },
+    {
+      "method": "setExpendHeight",
+      "params": [
+        "height"
+      ]
+    },
+    {
+      "method": "pasteText",
+      "params": [
+        "text"
+      ]
+    },
+    {
+      "method": "pasteFile",
+      "params": [
+        "path"
+      ]
+    },
+    {
+      "method": "typeString",
+      "params": [
+        "text"
+      ]
+    },
+    {
+      "method": "simulatePaste",
+      "params": [
+        "delayMs"
+      ]
+    },
+    {
+      "method": "getPrimaryDisplay",
+      "params": []
+    },
+    {
+      "method": "getAllDisplays",
+      "params": []
+    },
+    {
+      "method": "getCursorPosition",
+      "params": []
+    },
+    {
+      "method": "screenCapture",
+      "params": [
+        "savePath"
+      ]
+    },
+    {
+      "method": "screenColorPick",
+      "params": []
+    },
+    {
+      "method": "startDrag",
+      "params": [
+        "paths"
+      ]
+    },
+    {
+      "method": "httpRequest",
+      "params": [
+        "options"
+      ]
+    },
+    {
+      "method": "execCommand",
+      "params": [
+        "cmd",
+        "args"
+      ]
+    },
+    {
+      "method": "spawnProcess",
+      "params": [
+        "cmd",
+        "args"
+      ]
+    },
+    {
+      "method": "killProcess",
+      "params": [
+        "pid"
+      ]
+    },
+    {
+      "method": "redirect",
+      "params": [
+        "target",
+        "payload"
+      ]
+    },
+    {
+      "method": "setFeature",
+      "params": [
+        "feature"
+      ]
+    },
+    {
+      "method": "removeFeature",
+      "params": [
+        "code"
+      ]
+    },
+    {
+      "method": "removeSubInput",
+      "params": []
+    },
+    {
+      "method": "setSubInputValue",
+      "params": [
+        "text"
+      ]
+    },
+    {
+      "method": "subInputFocus",
+      "params": []
+    },
+    {
+      "method": "subInputBlur",
+      "params": []
+    },
+    {
+      "method": "subInputSelect",
+      "params": []
+    },
+    {
+      "method": "registerBackgroundTask",
+      "params": [
+        "taskName",
+        "intervalMs",
+        "command"
+      ]
+    },
+    {
+      "method": "startBackgroundTasks",
+      "params": []
+    },
+    {
+      "method": "stopBackgroundTasks",
+      "params": []
+    },
+    {
+      "method": "getDiskInfo",
+      "params": []
+    },
+    {
+      "method": "getBatteryInfo",
+      "params": []
+    },
+    {
+      "method": "showNotificationWithId",
+      "params": [
+        "title",
+        "body",
+        "notificationId"
+      ]
+    },
+    {
+      "method": "registerGlobalShortcut",
+      "params": [
+        "shortcut",
+        "callbackId"
+      ]
+    },
+    {
+      "method": "unregisterGlobalShortcut",
+      "params": [
+        "shortcut"
+      ]
+    },
+    {
+      "method": "streamCommand",
+      "params": [
+        "cmd",
+        "args"
+      ]
+    },
+    {
+      "method": "streamCommandKill",
+      "params": [
+        "id"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "onThemeChanged",
+      "event": "theme-changed"
+    },
+    {
+      "name": "onPluginEnter",
+      "event": "plugin-enter"
+    },
+    {
+      "name": "onPluginOut",
+      "event": "plugin-out"
+    },
+    {
+      "name": "onPluginDetach",
+      "event": "plugin-detach"
+    },
+    {
+      "name": "onClipboardChange",
+      "event": "clipboard-change"
+    },
+    {
+      "name": "onPluginRedirect",
+      "event": "plugin-redirect"
+    },
+    {
+      "name": "onSubInputChange",
+      "event": "sub-input-change"
+    },
+    {
+      "name": "onBackgroundTaskTick",
+      "event": "background-task-tick"
+    },
+    {
+      "name": "onNotificationClick",
+      "event": "notification-click"
+    },
+    {
+      "name": "onPluginShortcutTriggered",
+      "event": "plugin-shortcut-triggered"
+    },
+    {
+      "name": "onWsMessage",
+      "event": "ws-message"
+    },
+    {
+      "name": "onSseEvent",
+      "event": "sse-event"
+    },
+    {
+      "name": "onStreamCommand",
+      "event": "stream-command"
+    },
+    {
+      "name": "onDownloadProgress",
+      "event": "download-progress"
+    },
+    {
+      "name": "onSpeedTestProgress",
+      "event": "speed-test-progress"
+    }
+  ]
+}
