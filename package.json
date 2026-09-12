@@ -1,0 +1,21 @@
+{
+  "name": "fasty-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Official website and documentation for Fasty",
+  "scripts": {
+    "gen:plugins": "node scripts/gen-plugin-catalog.mjs",
+    "dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.13"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@11.25.0"
+}

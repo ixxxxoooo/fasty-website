@@ -1,0 +1,387 @@
+[
+  {
+    "id": "memo",
+    "name": "备忘录",
+    "description": "轻量备忘录，支持置顶、搜索和快速编辑",
+    "category": "utility",
+    "features": [
+      "记录和管理便签笔记"
+    ]
+  },
+  {
+    "id": "sticky-notes",
+    "name": "便签",
+    "description": "桌面便签便利贴，默认独立置顶，Mini标签栏，支持 Markdown 即时预览与多色轮换",
+    "category": "utility",
+    "features": [
+      "桌面便签便利贴，默认独立悬浮置顶"
+    ]
+  },
+  {
+    "id": "flip-clock",
+    "name": "翻页时钟",
+    "description": "复古机械翻页时钟与日期，极简悬浮与自适应翻折",
+    "category": "utility",
+    "features": [
+      "复古机械翻页时钟"
+    ]
+  },
+  {
+    "id": "translator",
+    "name": "翻译助手",
+    "description": "多语言翻译，支持中英日韩法德西俄",
+    "category": "utility",
+    "features": [
+      "翻译文本到目标语言"
+    ]
+  },
+  {
+    "id": "stock-ticker",
+    "name": "股票盯盘",
+    "description": "迷你股票悬浮小窗，实时查看自选股涨跌幅，支持拖拽调整尺寸",
+    "category": "utility",
+    "features": [
+      "迷你悬浮窗查看自选股涨跌"
+    ]
+  },
+  {
+    "id": "calc-pad",
+    "name": "计算稿纸",
+    "description": "多行计算器，支持变量赋值和实时结果预览",
+    "category": "utility",
+    "features": [
+      "多行计算器"
+    ]
+  },
+  {
+    "id": "clipboard-history",
+    "name": "剪贴板历史",
+    "description": "自动记录剪贴板历史，支持搜索、收藏、分类查看",
+    "category": "utility",
+    "features": [
+      "查看和搜索剪贴板记录",
+      "查看收藏的剪贴板内容"
+    ]
+  },
+  {
+    "id": "dictionary",
+    "name": "简明词典",
+    "description": "离线英文简明词典，支持秒级极速查词、模糊匹配与中文反查",
+    "category": "utility",
+    "features": [
+      "极速查询英文单词及发音"
+    ]
+  },
+  {
+    "id": "screenshot",
+    "name": "截图工具",
+    "description": "屏幕截图工具，支持区域/窗口/全屏截图，内置编辑器",
+    "category": "utility",
+    "features": [
+      "区域截图 / 窗口截图 / 全屏截图",
+      "框选屏幕区域截图",
+      "截取整个屏幕",
+      "点击选择窗口截图",
+      "钉在桌面（贴图）"
+    ]
+  },
+  {
+    "id": "batch-rename",
+    "name": "批量重命名",
+    "description": "批量重命名文件，支持查找替换、前后缀、序号等模式",
+    "category": "utility",
+    "features": [
+      "批量修改文件名"
+    ]
+  },
+  {
+    "id": "lunar-calendar",
+    "name": "日历",
+    "description": "公历与农历日历，支持节气、法定节假日与调休、宜忌详情与假期提醒，可自定义周起始与显示项",
+    "category": "utility",
+    "features": [
+      "查看公历/农历、节气与节假日，支持假期提醒"
+    ]
+  },
+  {
+    "id": "theme-switch",
+    "name": "深色与浅色模式切换",
+    "description": "一键在系统深色/浅色之间切换",
+    "category": "utility",
+    "features": [
+      "当前深色则切浅色，当前浅色则切深色"
+    ]
+  },
+  {
+    "id": "weather",
+    "name": "天气预报",
+    "description": "精美天气预报，支持实时天气、24小时逐小时预报、7天天气趋势、空气质量与生活气象指数",
+    "category": "utility",
+    "features": [
+      "查看实时天气、24小时预报与7天气象趋势"
+    ]
+  },
+  {
+    "id": "web-launcher",
+    "name": "网页快开",
+    "description": "配置搜索引擎与直达链接；选中文字 + 快捷键即可搜索",
+    "category": "utility",
+    "features": [
+      "管理搜索引擎与快捷链接"
+    ]
+  },
+  {
+    "id": "desktop-pet",
+    "name": "桌面宠物",
+    "description": "瓦力风格小机器人，透明异形桌面挂件",
+    "category": "utility",
+    "features": [
+      "召唤瓦力风格小机器人"
+    ]
+  },
+  {
+    "id": "word-counter",
+    "name": "字数统计",
+    "description": "专业文本字数与语言特征分析，支持阅读时长预估与剪贴板极速读取",
+    "category": "utility",
+    "features": [
+      "统计字符数、单词数、行数"
+    ]
+  },
+  {
+    "id": "ai-chat",
+    "name": "AI 助手",
+    "description": "AI 对话助手，支持流式输出、多模型切换、对话历史、AI 绘画",
+    "category": "utility",
+    "features": [
+      "与 AI 进行对话"
+    ]
+  },
+  {
+    "id": "ocr",
+    "name": "OCR 文字识别",
+    "description": "极便捷的 OCR 文字识别工具，截图/粘贴/选图一键提取文字",
+    "category": "utility",
+    "features": [
+      "OCR 文字识别工具",
+      "截图识别文字",
+      "截图识别文字并复制"
+    ]
+  },
+  {
+    "id": "todo-list",
+    "name": "ToDo 待办",
+    "description": "轻量待办清单，支持分组、优先级和快速添加",
+    "category": "utility",
+    "features": [
+      "管理待办事项"
+    ]
+  },
+  {
+    "id": "timestamp-converter",
+    "name": "时间戳转换",
+    "description": "时间戳与日期格式互转，支持多种常见格式",
+    "category": "development",
+    "features": [
+      "Unix 时间戳 ↔ 日期格式互转",
+      "复制当前 Unix 时间戳"
+    ]
+  },
+  {
+    "id": "text-diff",
+    "name": "文本对比",
+    "description": "左右双栏对比文本差异，支持语法高亮",
+    "category": "development",
+    "features": [
+      "对比两段文本的差异"
+    ]
+  },
+  {
+    "id": "color-compare",
+    "name": "颜色对比",
+    "description": "识别颜色代码，支持多个颜色的亮度排序与对比度对比",
+    "category": "development",
+    "features": [
+      "识别颜色并对比多个颜色"
+    ]
+  },
+  {
+    "id": "base64-codec",
+    "name": "Base64 编解码",
+    "description": "Base64 编码与解码工具，支持文本与 Base64 互转",
+    "category": "development",
+    "features": [
+      "编码 / 解码 Base64 文本"
+    ]
+  },
+  {
+    "id": "hash-calculator",
+    "name": "Hash 计算器",
+    "description": "计算文本的 MD5、SHA-1、SHA-256、SHA-512 哈希值",
+    "category": "development",
+    "features": [
+      "MD5 / SHA-1 / SHA-256 / SHA-512"
+    ]
+  },
+  {
+    "id": "hosts-switch",
+    "name": "Hosts 切换",
+    "description": "管理和快速切换 /etc/hosts 方案",
+    "category": "development",
+    "features": [
+      "管理和切换 hosts 方案"
+    ]
+  },
+  {
+    "id": "json-formatter",
+    "name": "JSON 格式化",
+    "description": "JSON 格式化与压缩，支持语法高亮",
+    "category": "development",
+    "features": [
+      "格式化 / 压缩 / 校验 JSON"
+    ]
+  },
+  {
+    "id": "markdown-preview",
+    "name": "Markdown 预览",
+    "description": "实时 Markdown 编辑与预览，支持 GFM 语法",
+    "category": "development",
+    "features": [
+      "编辑并实时预览 Markdown"
+    ]
+  },
+  {
+    "id": "mermaid-editor",
+    "name": "Mermaid 编辑器",
+    "description": "Mermaid 图表实时编辑与预览，支持 AI 生成/纠错、多模板、导出 PNG/SVG",
+    "category": "development",
+    "features": [
+      "编辑并实时预览 Mermaid 图表"
+    ]
+  },
+  {
+    "id": "sql-formatter",
+    "name": "SQL 格式化",
+    "description": "SQL 格式化与压缩，支持 MySQL / TiDB / StarRocks / Spark / Presto 等方言语法高亮",
+    "category": "development",
+    "features": [
+      "格式化 / 压缩 SQL，多方言语法高亮"
+    ]
+  },
+  {
+    "id": "url-codec",
+    "name": "URL 编解码",
+    "description": "URL 编码与解码，支持 encodeURIComponent 和 encodeURI",
+    "category": "development",
+    "features": [
+      "编码 / 解码 URL"
+    ]
+  },
+  {
+    "id": "uuid-generator",
+    "name": "UUID 生成器",
+    "description": "批量生成 UUID，支持大写和去连字符",
+    "category": "development",
+    "features": [
+      "生成随机 UUID"
+    ]
+  },
+  {
+    "id": "speed-test",
+    "name": "测网速",
+    "description": "同时测试国内与国外延迟、下载、上传",
+    "category": "network",
+    "features": [
+      "国内 + 国外一起测"
+    ]
+  },
+  {
+    "id": "dns-switch",
+    "name": "DNS 切换",
+    "description": "快速切换 macOS 网络 DNS 服务器",
+    "category": "network",
+    "features": [
+      "一键切换 DNS 服务器"
+    ]
+  },
+  {
+    "id": "ip-query",
+    "name": "IP 查询助手",
+    "description": "查询本机IP、公网IP、IP地理位置信息",
+    "category": "network",
+    "features": [
+      "查询 IP 地址信息"
+    ]
+  },
+  {
+    "id": "port-scanner",
+    "name": "端口查询器",
+    "description": "查询端口占用、扫描端口范围、查看监听端口",
+    "category": "system",
+    "features": [
+      "查询端口占用和扫描",
+      "查看所有监听中的端口"
+    ]
+  },
+  {
+    "id": "process-manager",
+    "name": "进程管理",
+    "description": "查看系统进程、CPU/内存占用，支持搜索和终止进程",
+    "category": "system",
+    "features": [
+      "查看和管理系统进程"
+    ]
+  },
+  {
+    "id": "system-control",
+    "name": "系统控制",
+    "description": "通过关键词控制 macOS：屏保、废纸篓、锁屏、睡眠、重启、关机、全部弹出；可开关命令并引导自动化权限",
+    "category": "system",
+    "features": [
+      "管理系统命令开关与自动化权限",
+      "启动屏幕保护程序",
+      "在 Finder 中打开废纸篓",
+      "清空废纸篓（需确认）",
+      "注销当前用户（需确认）",
+      "让 Mac 进入睡眠",
+      "关闭显示器",
+      "锁定屏幕",
+      "重启 Mac（需确认）",
+      "关闭 Mac（需确认）",
+      "弹出全部可移除磁盘（排除系统盘与 Time Machine）"
+    ]
+  },
+  {
+    "id": "system-info",
+    "name": "系统信息",
+    "description": "查看 CPU、内存、磁盘、网络等系统信息",
+    "category": "system",
+    "features": [
+      "CPU / 内存 / 磁盘 / 网络概览"
+    ]
+  },
+  {
+    "id": "novel-reader",
+    "name": "小说阅读",
+    "description": "微信读书风格优雅小说阅读器，支持本地 TXT 智能分章导入与在线全本高速搜索离线",
+    "category": "media",
+    "features": [
+      "阅读小说、本地导入与在线找书"
+    ]
+  },
+  {
+    "id": "ai-portal",
+    "name": "AI 聚合中文",
+    "description": "AI 聚合中文 / AI Portal — DeepSeek, ChatGPT, Gemini, Doubao, Kimi, GLM official web hubs with independent windows and persistent login",
+    "category": "ai",
+    "features": [
+      "AI 聚合中文设置：管理各官网独立会话窗口",
+      "打开 DeepSeek 官方会话窗口",
+      "打开 ChatGPT 官方会话窗口",
+      "打开 Google Gemini 官方会话窗口",
+      "打开豆包官方会话窗口",
+      "打开 Kimi 官方会话窗口",
+      "打开 GLM / 智谱官方会话窗口"
+    ]
+  }
+]
